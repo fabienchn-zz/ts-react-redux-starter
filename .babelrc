@@ -1,0 +1,29 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/react",
+    "@babel/typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import",
+    "react-hot-loader/babel",
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".es",
+          ".es6",
+          ".mjs",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+  ]
+}
